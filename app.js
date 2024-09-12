@@ -17,7 +17,7 @@ var pjson = require('./package.json');
 console.log(pjson.version);
 
 app.get('/version', function (req,res) {
-  res.send("v1.0");
+  res.send("v2.0");
 });
 
 app.get('/ping', function (req, res) {

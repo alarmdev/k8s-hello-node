@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: "k8s-hello-node"
-          image: "byjg/k8s-hello-node"
+          image: "ghcr.io/alarmdev/images/k8s-hello-node-dev:1.0"
       imagePullSecrets:
         - name: ghcr-secret
 

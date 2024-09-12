@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infra
+  identifier: infra
+  orgIdentifier: default
+  projectIdentifier: default_project
+  environmentRef: stage
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: k8slocal
+    namespace: harness-demo
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false

@@ -4,6 +4,7 @@ WORKDIR /opt/src
 
 COPY package.json .
 COPY package-lock.json .
+COPY app.js .
 RUN npm install
 
 FROM node:10.15.1-alpine as runner
